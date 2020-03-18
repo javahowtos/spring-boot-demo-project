@@ -1,10 +1,11 @@
-package com.javahowtos.demo.repository;
+package com.example.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.javahowtos.demo.model.Item;
+import com.example.demo.model.Item;
 
-
+@Repository
 public interface ItemRepository extends JpaRepository<Item, Long> {
 
 }
